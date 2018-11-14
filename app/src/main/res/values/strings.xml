@@ -6,4 +6,16 @@
     <string name="this_is_main_page">这是首页</string>
     <string name="this_is_find_page">这是发现页</string>
     <string name="this_is_mine">这是我的</string>
+    <string name="coupon">优惠券</string>
+    <string name="discount_coupon">折扣券</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="my_password">我的口令</string>
+    <string name="my_kit">我的锦囊</string>
+    <string name="safe_center">安全中心</string>
+    <string name="common_address">常用地址</string>
+    <string name="service_center">服务中心</string>
+    <string name="suggest">意见反馈</string>
+    <string name="my_settings">我的设置</string>
 </resources>
