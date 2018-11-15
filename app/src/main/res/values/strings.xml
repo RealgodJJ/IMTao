@@ -18,4 +18,12 @@
     <string name="service_center">服务中心</string>
     <string name="suggest">意见反馈</string>
     <string name="my_settings">我的设置</string>
+    <string name="login">登录</string>
+    <string name="input_username">请输入登录用户名/手机号/邮箱</string>
+    <string name="input_password">请输入登录密码</string>
+    <string name="find_password">找回密码</string>
+    <string name="free_register">免费注册</string>
+    <string name="scan_and_scan">扫一扫</string>
+    <string name="message">消息</string>
+    <string name="destination_ticket">目的地/景点/酒店/门票</string>
 </resources>

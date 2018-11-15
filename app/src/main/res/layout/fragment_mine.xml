@@ -13,9 +13,9 @@
         android:background="#008CC9">
 
         <Button
-            android:id="@+id/bt_login"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:id="@+id/bt_enter_login"
+            android:layout_width="120dp"
+            android:layout_height="108dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:background="@mipmap/login_btn" />
@@ -23,7 +23,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/bt_login"
+            android:layout_below="@+id/bt_enter_login"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
             android:baselineAligned="false"
@@ -129,7 +129,7 @@
                         android:paddingTop="18dp"
                         android:text="@string/my_order"
                         android:textColor="#000000"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -169,7 +169,7 @@
                         android:paddingTop="18dp"
                         android:text="@string/my_collection"
                         android:textColor="#000000"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -208,7 +208,7 @@
                         android:paddingTop="18dp"
                         android:text="@string/my_password"
                         android:textColor="#000000"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -246,14 +246,13 @@
                     android:paddingTop="7dp"
                     android:text="@string/my_kit"
                     android:textColor="#000000"
-                    android:textSize="24sp" />
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="8dp"
-                android:layout_marginTop="10dp"
                 android:background="#D8DDE1" />
 
             <LinearLayout
@@ -281,7 +280,7 @@
                         android:paddingTop="18dp"
                         android:text="@string/safe_center"
                         android:textColor="#000000"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -320,7 +319,7 @@
                         android:paddingTop="18dp"
                         android:text="@string/common_address"
                         android:textColor="#000000"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -359,7 +358,7 @@
                         android:paddingTop="18dp"
                         android:text="@string/service_center"
                         android:textColor="#000000"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -398,7 +397,7 @@
                     android:paddingTop="7dp"
                     android:text="@string/suggest"
                     android:textColor="#000000"
-                    android:textSize="24sp" />
+                    android:textSize="20sp" />
 
 
             </LinearLayout>
@@ -406,7 +405,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="8dp"
-                android:layout_marginTop="10dp"
                 android:background="#D8DDE1" />
 
             <LinearLayout
@@ -426,15 +424,15 @@
                     tools:ignore="ContentDescription" />
 
 
-                    <TextView
-                        android:id="@+id/tv_my_settings"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:paddingTop="7dp"
-                        android:text="@string/my_settings"
-                        android:textColor="#000000"
-                        android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/tv_my_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/my_settings"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
 
             </LinearLayout>
 

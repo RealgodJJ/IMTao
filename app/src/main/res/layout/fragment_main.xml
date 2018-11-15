@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_advertisement"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+    </android.support.v4.view.ViewPager>
+
+    <include
+        layout="@layout/fragment_main_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/nav_header_index"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:layout_width="wrap_content"
