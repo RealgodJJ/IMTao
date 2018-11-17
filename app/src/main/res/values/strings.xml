@@ -26,4 +26,15 @@
     <string name="scan_and_scan">扫一扫</string>
     <string name="message">消息</string>
     <string name="destination_ticket">目的地/景点/酒店/门票</string>
+    <string name="airport_ticket">飞机票</string>
+    <string-array name="main_fragment_menu_item_name">
+        <item>飞机票</item>
+        <item>住酒店</item>
+        <item>去旅游</item>
+        <item>周边游</item>
+        <item>买门票</item>
+        <item>火车票</item>
+        <item>汽车票</item>
+        <item>领里程</item>
+    </string-array>
 </resources>
