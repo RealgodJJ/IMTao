@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:id="@+id/iv_find_second_item_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/find_channel_partner"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_find_second_item_name"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:text="@string/partner" />
+
+</LinearLayout>

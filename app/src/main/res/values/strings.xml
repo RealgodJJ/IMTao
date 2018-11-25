@@ -27,7 +27,40 @@
     <string name="message">消息</string>
     <string name="destination_ticket">目的地/景点/酒店/门票</string>
     <string name="airport_ticket">飞机票</string>
-    <string-array name="main_fragment_menu_item_name">
+    <string name="direct_login">直接登录</string>
+    <string name="register">注册</string>
+    <string name="phone_prefix">+86</string>
+    <string name="input_phone_number">请输入您的手机号</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="submit">提交</string>
+    <string name="agree_agreement">注册即视为同意慕淘服务协议</string>
+    <string name="national_air_tickets">国际机票</string>
+    <string name="travel_news">旅行热讯</string>
+    <string name="travel_pk">旅行PK</string>
+    <string name="mount_fuji">富士山</string>
+    <string name="roman_arena">罗马角斗场</string>
+    <string name="frost_covered_volcano">一座撒满糖霜的城市</string>
+    <string name="history_conquer_power">能给你历史和征服的力量</string>
+    <string name="partner">结伴而行\n一起才好玩</string>
+    <string name="like_it">喜欢TA</string>
+    <string name="red_like">%1$d人喜欢</string>
+    <string name="blue_like">%1$d人喜欢</string>
+    <string name="red_percent">%1$d%%</string>
+    <string name="blue_percent">%1$d%%</string>
+    <string name="popular_headlines">热门头条</string>
+    <string name="guangzhou_to_dongguan">从广州去东莞仅需要半个小时，美食美景统统都在等着你！</string>
+    <string name="praise_number">%1$d</string>
+    <string name="look_number">%1$d</string>
+    <string name="come_from">源自：%1$d</string>
+    <string name="more">更多</string>
+    <string name="coming_fall">秋天真的来了，吃火锅就按这个火锅地图走!</string>
+    <string name="travel_online">旅行直播</string>
+    <string name="find_america_thing">发现美国好东西</string>
+    <string name="teacher_analysis">资深老师解析，互动发红包</string>
+    <string name="SPG_first_online">SPG首次直播</string>
+    <string name="beijing_changan_hotel">北京长安W酒店，耀动帝都</string>
+    <string-array name="main_fragment_main_menu_item_name">
         <item>飞机票</item>
         <item>住酒店</item>
         <item>去旅游</item>
@@ -36,5 +69,31 @@
         <item>火车票</item>
         <item>汽车票</item>
         <item>领里程</item>
+    </string-array>
+    <string-array name="main_fragment_second_menu_item_name">
+        <item>国际机票</item>
+        <item>签证服务</item>
+        <item>飞机接送</item>
+    </string-array>
+    <string-array name="find_fragment_menu_item_name">
+        <item>旅行热讯</item>
+        <item>广场动态</item>
+        <item>热点地带</item>
+        <item>边走边买</item>
+    </string-array>
+    <string-array name="find_fragment_second_menu_item_name">
+        <item>结伴而行\n一起才好玩</item>
+        <item>激励智囊\n教你玩世界</item>
+        <item>旅游直播\n分享精彩游</item>
+    </string-array>
+    <string-array name="find_fragment_popular_headlines_item_titles">
+        <item>从广州去东莞仅需要半个小时，美食美景统统都在等着你！</item>
+        <item>旅行前最最应该做的10件准备事项，千万别给忽略了！</item>
+        <item>北京周边竟藏着20个绝美仙境，够你免费玩一年！</item>
+    </string-array>
+    <string-array name="find_fragment_popular_headlines_item_come_from">
+        <item>羊城攻略</item>
+        <item>冬夏旅游</item>
+        <item>北京攻略</item>
     </string-array>
 </resources>

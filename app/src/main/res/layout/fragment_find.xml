@@ -1,12 +1,352 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/find"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:src="@mipmap/find_news"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_find"
+            android:layout_marginTop="10dp"
+            android:background="#D8DDE1" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_find_menu"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_find_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#D8DDE1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_find_second_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#D8DDE1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_travel_pk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/travel_pk"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/find_reflesh"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_pk1"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/tv_travel_pk"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/find_pk1"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv_pk2"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/tv_travel_pk"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/find_pk2"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_red_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/iv_pk1"
+            android:layout_alignBottom="@id/iv_pk1"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/red_percent"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_blue_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/iv_pk2"
+            android:layout_alignBottom="@id/iv_pk2"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/blue_percent"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <ProgressBar
+            android:id="@+id/pb_process_pk1"
+            style="@style/StyleProgressBarLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_pk1"
+            android:layout_alignStart="@id/iv_pk1"
+            android:layout_alignEnd="@id/iv_pk1"
+            android:background="#33FF0000"
+            tools:max="149"
+            tools:progress="51" />
+
+        <ProgressBar
+            android:id="@+id/pb_process_pk2"
+            style="@style/StyleProgressBarRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_pk2"
+            android:layout_alignStart="@id/iv_pk2"
+            android:layout_alignEnd="@id/iv_pk2"
+            android:background="#330000FF"
+            tools:max="149"
+            tools:progress="98" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="125dp"
+            android:src="@mipmap/find_vs"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_mount_fuji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_travel_pk"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/mount_fuji"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_mount_fuji"
+            android:layout_alignStart="@id/tv_mount_fuji"
+            android:text="@string/frost_covered_volcano"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_roman_arena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_travel_pk"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/roman_arena"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_roman_arena"
+            android:layout_alignEnd="@id/tv_roman_arena"
+            android:text="@string/history_conquer_power"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_hobby_red"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/pb_process_pk1"
+            android:layout_alignStart="@id/tv_mount_fuji"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/hobby_red"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb_process_pk1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/iv_hobby_red"
+            android:text="@string/like_it"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_red_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_red"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/iv_hobby_red"
+            android:text="@string/red_like"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_hobby_blue"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/pb_process_pk2"
+            android:layout_alignEnd="@id/tv_roman_arena"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/hobby_blue"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb_process_pk2"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/iv_hobby_blue"
+            android:text="@string/like_it"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_blue_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_red"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/iv_hobby_blue"
+            android:text="@string/blue_like"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#D8DDE1" />
 
     <TextView
+        android:id="@+id/tv_popular_headlines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/this_is_find_page" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/popular_headlines"
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
-</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#D8DDE1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_popular_headlines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_popular_headlines"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/more"
+                android:textColor="@color/string_blue" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

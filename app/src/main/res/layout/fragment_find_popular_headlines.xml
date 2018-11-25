@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/guangzhou_to_dongguan"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/find_hot_city"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_icon"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/iv_icon"
+        android:text="@string/praise_number" />
+
+    <ImageView
+        android:id="@+id/iv_praise"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@id/iv_icon"
+        android:layout_toStartOf="@id/tv_praise"
+        android:src="@mipmap/find_hot_yes"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_look"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_icon"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/iv_praise"
+        android:text="@string/look_number" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@id/iv_icon"
+        android:layout_toStartOf="@id/tv_look"
+        android:src="@mipmap/find_hot_eye"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_come_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_icon"
+        android:text="@string/come_from"
+        android:textSize="12sp"
+        tools:ignore="RelativeOverlap" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/iv_icon"
+        android:layout_marginTop="15dp"
+        android:background="#D8DDE1" />
+</RelativeLayout>

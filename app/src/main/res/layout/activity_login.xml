@@ -9,7 +9,7 @@
         android:id="@+id/rl_login_header"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:background="#008CC9">
+        android:background="@color/background_blue">
 
         <ImageView
             android:layout_width="30dp"
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/v_password"
             android:layout_marginTop="10dp"
-            android:background="#F4F5F7"
+            android:background="@color/button_color"
             android:text="@string/login"
             android:textSize="24sp" />
 
@@ -95,10 +95,11 @@
             android:layout_marginTop="10dp"
             android:background="@null"
             android:text="@string/find_password"
-            android:textColor="#2999CE"
+            android:textColor="@color/string_blue"
             android:textSize="24sp" />
 
         <Button
+            android:id="@+id/bt_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/bt_enter_login"

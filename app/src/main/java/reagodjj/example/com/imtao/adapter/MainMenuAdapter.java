@@ -13,13 +13,13 @@ import android.widget.TextView;
 import java.util.List;
 
 import reagodjj.example.com.imtao.R;
-import reagodjj.example.com.imtao.entity.MainFragmentMenu;
+import reagodjj.example.com.imtao.entity.MainFragmentMainMenu;
 
 public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuViewHolder> {
     private Context context;
-    private List<MainFragmentMenu> mainFragmentMenus;
+    private List<MainFragmentMainMenu> mainFragmentMenus;
 
-    public MainMenuAdapter(Context context, List<MainFragmentMenu> mainFragmentMenus) {
+    public MainMenuAdapter(Context context, List<MainFragmentMainMenu> mainFragmentMenus) {
         this.context = context;
         this.mainFragmentMenus = mainFragmentMenus;
     }
@@ -28,12 +28,13 @@ public class MainMenuAdapter extends RecyclerView.Adapter<MainMenuViewHolder> {
     @NonNull
     @Override
     public MainMenuViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MainMenuViewHolder(LayoutInflater.from(context).inflate(R.layout.fragment_main_menu_item, null));
+        return new MainMenuViewHolder(LayoutInflater.from(context)
+                .inflate(R.layout.fragment_main_main_menu_item, null));
     }
 
     @Override
     public void onBindViewHolder(@NonNull MainMenuViewHolder holder, int position) {
-        MainFragmentMenu mainFragmentMenu = mainFragmentMenus.get(position);
+        MainFragmentMainMenu mainFragmentMenu = mainFragmentMenus.get(position);
         holder.ivMenuIcon.setImageResource(mainFragmentMenu.getIcon());
         holder.tvItemName.setText(mainFragmentMenu.getItemName());
     }

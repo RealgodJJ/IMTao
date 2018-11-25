@@ -1,10 +1,10 @@
 package reagodjj.example.com.imtao.entity;
 
-public class MainFragmentMenu {
+public class MainFragmentSecondMenu {
     private String itemName;
     private int icon;
 
-    public MainFragmentMenu(String itemName, int icon) {
+    public MainFragmentSecondMenu(String itemName, int icon) {
         this.itemName = itemName;
         this.icon = icon;
     }

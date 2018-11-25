@@ -16,17 +16,20 @@ import java.util.Objects;
 import reagodjj.example.com.imtao.R;
 import reagodjj.example.com.imtao.adapter.MainHeaderAdvertisementAdapter;
 import reagodjj.example.com.imtao.adapter.MainMenuAdapter;
+import reagodjj.example.com.imtao.adapter.SecondMenuAdapter;
 import reagodjj.example.com.imtao.util.DataUtil;
 
 public class MainFragment extends Fragment {
     private ViewPager vpAdvertisement;
-    private RecyclerView rvMainMenu;
+    private RecyclerView rvMainMenu, rvSecondMenu;
+
     private int[] icons = {R.mipmap.header_pic_ad1, R.mipmap.header_pic_ad2, R.mipmap.header_pic_ad1,
             R.mipmap.header_pic_ad2};
-    private int[] itemIcons = {R.mipmap.menu_airport, R.mipmap.menu_hotel, R.mipmap.menu_trav,
+    private int[] mainItemIcons = {R.mipmap.menu_airport, R.mipmap.menu_hotel, R.mipmap.menu_trav,
             R.mipmap.menu_nearby, R.mipmap.menu_ticket, R.mipmap.menu_train, R.mipmap.menu_car,
             R.mipmap.menu_course};
-    private String itemNames[];
+    private int[] secondItemIcons = {R.mipmap.menu_second_airport, R.mipmap.menu_second_play,
+            R.mipmap.menu_second_quan};
 
     @Nullable
     @Override
@@ -39,18 +42,29 @@ public class MainFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         vpAdvertisement = Objects.requireNonNull(getView()).findViewById(R.id.vp_advertisement);
         rvMainMenu = getView().findViewById(R.id.rv_main_menu);
-        itemNames = Objects.requireNonNull(getActivity()).getResources()
-                .getStringArray(R.array.main_fragment_menu_item_name);
+        rvSecondMenu = getView().findViewById(R.id.rv_second_menu);
 
+        String[] mainItemNames = Objects.requireNonNull(getActivity()).getResources()
+                .getStringArray(R.array.main_fragment_main_menu_item_name);
+        String[] secondItemNames = getActivity().getResources()
+                .getStringArray(R.array.main_fragment_second_menu_item_name);
+
+        //设置广告样式
         MainHeaderAdvertisementAdapter mainHeaderAdvertisementAdapter =
                 new MainHeaderAdvertisementAdapter(getActivity(),
                         DataUtil.getHeaderAdvertisementInfo(getActivity(), icons));
         vpAdvertisement.setAdapter(mainHeaderAdvertisementAdapter);
 
-        //设置布局样式
+        //设置主菜单布局样式
         rvMainMenu.setLayoutManager(new GridLayoutManager(getActivity(), 4));
         MainMenuAdapter mainMenuAdapter = new MainMenuAdapter(getActivity(),
-                DataUtil.getMainFragmentMenus(itemNames, itemIcons));
+                DataUtil.getMainFragmentMenus(mainItemNames, mainItemIcons));
         rvMainMenu.setAdapter(mainMenuAdapter);
+
+        //设置二级菜单布局样式
+        rvSecondMenu.setLayoutManager(new GridLayoutManager(getActivity(), 3));
+        SecondMenuAdapter secondMenuAdapter = new SecondMenuAdapter(getActivity(),
+                DataUtil.getMainFragmentSecondMenus(secondItemNames, secondItemIcons));
+        rvSecondMenu.setAdapter(secondMenuAdapter);
     }
 }
