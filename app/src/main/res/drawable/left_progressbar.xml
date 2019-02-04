@@ -5,11 +5,12 @@
             android:clipOrientation="horizontal"
             android:gravity="right">
             <shape>
+                <solid android:color="#F00" />
                 <!--<corners android:radius="5dp" />-->
-                <gradient
-                    android:centerColor="#F00"
-                    android:endColor="#F00"
-                    android:startColor="#F00" />
+                <!--<gradient-->
+                    <!--android:centerColor="#F00"-->
+                    <!--android:endColor="#F00"-->
+                    <!--android:startColor="#F00" />-->
             </shape>
         </clip>
     </item>
